@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* WhatFont is used to know about font type and its attributes */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+ body{
+    background-color: black;
+ }
+.main {
+    background-image: url("images/back.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    /*background-repeat: no repeat; */
+    height: 80vh;
+    position: relative;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    background-color: rgb(8, 8, 8);
+}
+
+nav {
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color:red;
+    width: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+.hero {
+    font-family: "Poppins", sans-serif;
+    height: calc(100% -62px); 
+    /* now this solves the problem of responsivenese as navigation height got minus */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* // by doing it row it c\adds the prpoperties rows wise */
+    color: white;
+    position: relative;
+    /* it higlights it */
+    gap:22px;
+    padding:0 30px;
+}
+.hero> :nth-child(1){
+    font-weight:bolder;
+    font-size:48px; 
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.cont input{
+    color:white;
+    padding : 7px 101px 8px 14px;
+    /* font-weight: 900; */
+    /* font-weight: 500; */
+    font-size: 8px;
+    border-radius: 8px;  
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(221, 200, 200, 0.5);
+}
+.cont button{
+    color:rgb(255, 247, 247);
+    background-color: red;
+    font-weight: bolder;
+    border:4px solid rgba(245, 13, 13, 0.5)
+}
+ .col{
+    background-color: red;
+    color: rgb(247, 241, 241);
+    padding: 3px 4px;
+    font-weight: bold;
+    border: 2px solid rgba(250, 9, 9, 0.904);
+ }
+ .line{
+height: 7px;
+background-color: rgb(72, 73, 75);
+ }
+ .cont :nth-child(1){
+    background-color: rgba(22,22,22,0.25);
+    padding:2px;
+    font-size: 12px;
+    border: 2px solid rgba(240,220,200,0.5)
+ }
+ .lang{
+    border:4px solid rgba(240,220,200,0.5)
+ }
+ .rightup :hover{
+    cursor:pointer;
+ }
+ .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    max-width: 70vw;
+    color: white;
+ }
+ .sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+ }
+ .sec img{
+    width: 30 vw;
+    position: relative;
+    z-index: 10;
+ }
+ .sec video {
+    position: absolute;
+    top: 104px;
+    right: 75px;
+}
+.first > div :nth-child(1){
+    font-size:35px;
+    font-weight: bolder;
+}
+.first > div :nth-child(2){
+font-size: 20px;
+font-weight: bolder;
+}
+section>div{
+    display:flex;
+    flex-direction: column;
+}
+.WatchSec{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.WatchSec img{
+    position: relative;
+    width: 50vw;
+    z-index: 10;
+}
+.WatchSec video{
+    position: absolute;
+    top: 55px;
+    right: 140px;
+    width: 30vw;
+}
+.Faq{
+    background: black;
+    color: white;
+    padding : 34px;
+}
+.Faq h2{
+background-color: black;
+color: white;
+text-align: center;
+font-size: 48px;
+}
+.Faqbox{
+    transition: all 1s ease-out;
+    font-size: 24px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 40vw;
+    margin: 34px auto;
+    cursor:pointer;
+}
+.Faqbox:hover{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.Faqbox svg{
+    filter: invert(1);
+}
+.bottom{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.bottom input{
+    background-color: black;
+    color: white;
+}
+.bottom button{
+    color: White;
+    background-color: red;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:white;.
+    max-width: 60vw;
+    margin:auto
+}
+.FooterItem{
+    display: flex;
+    flex-direction: column;
+    padding: 30px; 
+}
+footer a {
+    color:white;
+    text-decoration: underline;
+}
+.contact{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.FooterItem a:hover{
+    color: black;
+    background-color: #fff;
+    padding: 4px;
+}
